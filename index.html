@@ -1,0 +1,117 @@
+
+<meta charset="utf-8">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<style>
+    .calculator {
+        margin: auto;
+        width: 300px;
+        height: 450px;
+        border: 7px #888888;
+        background-color: #585858;
+        box-shadow: 0px 0px 10px #555555;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .titre {
+        text-align: center;
+        margin: auto;
+        margin-top: 5px;
+        width: 95%;
+        font-size: 30px;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    .ecran {
+        margin: auto;
+        width: 90%;
+        height: 15%;
+        background-color: #C5D8C5;
+        border-radius: 5px;
+        border: 10px #888888;
+        box-shadow: 0px 0px 10px #999999;
+        font-size: 7vh;
+        text-align: right;
+        overflow: hidden;
+    }
+    .bouton_standard {
+        margin: auto;
+        margin-top: 5px;
+        width: 100%;
+        float: center;
+        height: 100%;
+        background-color: white;
+        border-radius: 5px;
+        font-size: 7vh;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+    }
+    .bouton_clear {
+        margin: auto;
+        margin-top: 5px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 3vh;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+    }
+    table {
+        margin: auto;
+        width: 90%;
+        float: center;
+        overflow: hidden;
+        table-layout: fixed;
+    }
+</style>
+
+<head>
+    <title> Javascript Calculator </title>
+</head>
+
+<script src="calculator.js"></script>
+
+<div class="page">
+    <br><br>
+    <div class="calculator">
+        <div class="titre">
+            JS Calculator
+        </div>
+        <div id="ecran" class="ecran">
+
+        </div>
+        <br>
+        <table>
+<tr>
+    <td><button id="clear" class="bouton_clear" style="background-color:white;">Clear</button></td>
+</tr></table>
+<table>
+ <tr>
+   <th><button id="7" class="bouton_standard">7</button></th>
+   <th><button id="8" class="bouton_standard">8</button></th>
+   <th><button id="9" class="bouton_standard">9</button></th>
+   <th><button id="diviser" class="bouton_standard">/</button></th>
+ </tr>
+ <tr>
+   <td><button id="4" class="bouton_standard">4</button></td>
+   <td><button id="5" class="bouton_standard">5</button></td>
+   <td><button id="6" class="bouton_standard">6</button></td>
+   <td><button id="fois" class="bouton_standard">x</button></td>
+ </tr>
+ <tr>
+   <td><button id="1" class="bouton_standard">1</button></td>
+   <td><button id="2" class="bouton_standard">2</button></td>
+   <td><button id="3" class="bouton_standard">3</button></td>
+   <td><button id="moins" class="bouton_standard">-</button></td>
+ </tr>
+ <tr>
+   <td><button id="0" class="bouton_standard">0</button></td>
+   <td><button id="point" class="bouton_standard">.</button></td>
+   <td><button id="plus" class="bouton_standard">+</button></td>
+   <td><button id="egal" class="bouton_standard" style="background-color:orange;">=</button></td>
+ </tr>
+</table>
+    </div>
+</div>
