@@ -134,6 +134,6 @@ function calcul(array) {
         array[0] = maths;
         maths = calcul(array);
     }
-    maths = Number((maths).toFixed(7));
+    maths = Number((maths).toFixed(6));
     return maths;
 }
